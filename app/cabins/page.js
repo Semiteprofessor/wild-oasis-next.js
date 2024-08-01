@@ -2,6 +2,12 @@ import { Suspense } from "react";
 import Spinner from "../components/Spinner";
 import Filter from "../components/Filter";
 
+export const revalidate = 3600;
+
+export const metadata = {
+  title: "Cabins",
+};
+
 const Page = ({ searchParams }) => {
   const filter = searchParams?.capacity ?? "all";
 
